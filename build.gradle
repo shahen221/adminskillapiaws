@@ -1,0 +1,58 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.5'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id 'java'
+}
+
+group = 'com.shah.fse'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+/*dependencyManagement {
+  imports {
+    mavenBom 'io.awspring.cloud:spring-cloud-aws-dependencies:2.3.1'
+  }
+}*/
+
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework:spring-jms:5.3.11'
+	implementation 'javax.jms:javax.jms-api:2.0.1'
+	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap:3.1.5'
+	//implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	//implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.2.10.RELEASE'
+	implementation 'org.apache.activemq:activemq-client:5.16.4'
+	implementation 'org.apache.activemq:activemq-pool:5.16.4'
+	//implementation 'org.springframework.boot:spring-boot-starter-cache:2.7.5'
+	//implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	//implementation 'io.awspring.cloud:spring-cloud-starter-aws'
+	//implementation 'com.amazonaws:aws-java-sdk-elasticache'
+	//implementation 'net.spy:spymemcached:2.12.3'
+	implementation('io.sixhours:memcached-spring-boot-starter:2.4.3') {
+	  exclude group: 'com.googlecode.xmemcached', module: 'xmemcached'
+	  //exclude group: 'com.google.appengine', module: 'appengine-api-1.0-sdk'
+	}
+	//implementation 'com.googlecode.xmemcached:xmemcached:1.4.1'
+	//implementation 'com.google.appengine:appengine-api-1.0-sdk:2.0.9'
+	implementation('com.amazonaws:elasticache-java-cluster-client:1.1.2')
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

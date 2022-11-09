@@ -1,0 +1,12 @@
+server.port=9001
+spring.application.name=admin-skill-api-aws
+spring.main.allow-bean-definition-overriding=true
+
+#amazon mq settings
+activemq.broker.url=ssl://b-412a2248-4f84-4ecb-b6fc-b9037491ae70-1.mq.us-east-2.amazonaws.com:61617
+activemq.user=engineerskillprofileuser
+activemq.password=engineerskillprofileuserpassword
+
+#aws elastic mem-cache
+cloud.aws.elasticache.enabled=true
+cloud.aws.elasticache.clusters=['engineer-skill-profiles-cache']

@@ -1,0 +1,34 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: admin-skill-api-aws
+  main:
+    allow-bean-definition-overriding: true
+
+cloud:
+  aws:
+    elasticache:
+        clusters:
+          - name: engineer-skill-profiles-cache
+            expiration: 84600
+        enabled: true
+        default-expiration: 84600
+        
+activemq:
+  broker:
+    url: ssl://b-c928dd99-afec-4562-8b3a-a685de3f7cd7-1.mq.us-east-2.amazonaws.com:61617
+  user: engineerskillprofileuser
+  password: engineerskillprofileuserpassword
+
+
+amazon:
+  region: us-east-2
+  access:
+    key: AKIAY2YPA44KOYJN3TLV 
+    secretkey: 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
+    
+aws:
+  accessKeyId: AKIAY2YPA44KOYJN3TLV
+  secretKey: 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
+

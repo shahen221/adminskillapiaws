@@ -1,0 +1,31 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: admin-skill-api-aws
+  main:
+    allow-bean-definition-overriding: true
+
+memcached.cache:
+    servers: engineer-skill-profiles-cache.atqko2.cfg.use2.cache.amazonaws.com:11211
+    provider: aws
+    operation-timeout: 60s
+      
+        
+activemq:
+  broker:
+    url: ssl://b-597f5d01-e946-4024-a600-c65d28bb511d-1.mq.us-east-2.amazonaws.com:61617
+  user: engineerskillprofileuser
+  password: engineerskillprofileuserpassword
+
+
+amazon:
+  region: us-east-2
+  access:
+    key: AKIAY2YPA44KOYJN3TLV 
+    secretkey: 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
+    
+aws:
+  accessKeyId: AKIAY2YPA44KOYJN3TLV
+  secretKey: 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
+

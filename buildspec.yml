@@ -1,0 +1,27 @@
+version: 0.2
+       
+phases:
+  pre_build:
+    # run-as: Linux-user-name
+    on-failure: ABORT
+    commands:
+      - echo Logging in to Docker Hub...
+      - "docker login -u 'shahen221' -p '$munna123'"
+  build:
+    # run-as: Linux-user-name
+    on-failure: ABORT
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - "docker build -t adminkillapiaws:latest . "
+      - docker tag adminkillapiaws:latest shahen221/adminkillapiaws:latest
+    finally:
+      - command
+      - command
+  post_build:
+    # run-as: Linux-user-name
+    on-failure: ABORT
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push shahen221/adminkillapiaws:latest
