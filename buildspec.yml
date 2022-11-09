@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - "docker build -t adminkillapiaws:latest . "
+      - "docker build -t adminskillapiaws:latest . "
       - docker tag adminkillapiaws:latest shahen221/adminskillapiaws:latest
     finally:
       - command
@@ -24,4 +24,4 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push shahen221/adminkillapiaws:latest
+      - docker push shahen221/adminskillapiaws:latest
