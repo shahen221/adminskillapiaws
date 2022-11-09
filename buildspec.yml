@@ -14,7 +14,7 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - "docker build -t adminkillapiaws:latest . "
-      - docker tag adminkillapiaws:latest shahen221/adminkillapiaws:latest
+      - docker tag adminkillapiaws:latest shahen221/adminskillapiaws:latest
     finally:
       - command
       - command
