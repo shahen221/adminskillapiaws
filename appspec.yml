@@ -1,8 +1,5 @@
 version: 0.0
 os: linux 
-files:
-  - source: /
-    destination: /home/ec2-user/api
 hooks:
 # During the ApplicationStart deployment lifecycle event, run the commands 
 #   in the script specified in "location".
