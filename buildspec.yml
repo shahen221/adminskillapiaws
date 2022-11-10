@@ -25,3 +25,9 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push shahen221/adminskillapiaws:latest
+artifacts:
+  files:
+    - '**/*'
+  base-directory: base_dir
+  name: adminskillapiaws-artifact
+  discard-paths: no
