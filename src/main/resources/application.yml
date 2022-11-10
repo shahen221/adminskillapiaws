@@ -14,7 +14,7 @@ memcached.cache:
         
 activemq:
   broker:
-    url: ssl://b-597f5d01-e946-4024-a600-c65d28bb511d-1.mq.us-east-2.amazonaws.com:61617
+    url: ssl://b-ba01a586-7461-44bd-9ca9-f067bcf62e95-1.mq.us-east-2.amazonaws.com:61617
   user: engineerskillprofileuser
   password: engineerskillprofileuserpassword
 
@@ -22,10 +22,10 @@ activemq:
 amazon:
   region: us-east-2
   access:
-    key: AKIAY2YPA44KOYJN3TLV 
-    secretkey: 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
+    key: AKIAY2YPA44KCSBVLHJK 
+    secretkey: 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
     
 aws:
-  accessKeyId: AKIAY2YPA44KOYJN3TLV
-  secretKey: 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
+  accessKeyId: AKIAY2YPA44KCSBVLHJK
+  secretKey: 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
 
