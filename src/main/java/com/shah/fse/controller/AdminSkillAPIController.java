@@ -20,7 +20,7 @@ import com.shah.fse.exception.AdminSkillProfileException;
 import com.shah.fse.service.AdminSkillProfileService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping("/skill-tracker/api/v1/admin")
 public class AdminSkillAPIController {
 	
