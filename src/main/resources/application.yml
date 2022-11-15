@@ -14,7 +14,7 @@ memcached.cache:
         
 activemq:
   broker:
-    url: ssl://b-10b219cf-832c-4548-b472-e864376cceb1-1.mq.us-east-2.amazonaws.com:61617
+    url: ssl://b-df8fb5b3-36a9-49b7-b93e-6d53ed54f5dd-1.mq.us-east-2.amazonaws.com:61617
   user: engineerskillprofileuser
   password: engineerskillprofileuserpassword
 
