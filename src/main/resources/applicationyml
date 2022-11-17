@@ -18,17 +18,17 @@ cloud:
 activemq:
   broker:
     url: ssl://b-c928dd99-afec-4562-8b3a-a685de3f7cd7-1.mq.us-east-2.amazonaws.com:61617
-  user: engineerskillprofileuser
-  password: engineerskillprofileuserpassword
+  user: 
+  password: 
 
 
 amazon:
   region: us-east-2
   access:
-    key: AKIAY2YPA44KOYJN3TLV 
-    secretkey: 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
+    key:  
+    secretkey: 
     
 aws:
-  accessKeyId: AKIAY2YPA44KOYJN3TLV
-  secretKey: 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
+  accessKeyId: 
+  secretKey: 
 
