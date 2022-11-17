@@ -15,17 +15,17 @@ memcached.cache:
 activemq:
   broker:
     url: ssl://b-df8fb5b3-36a9-49b7-b93e-6d53ed54f5dd-1.mq.us-east-2.amazonaws.com:61617
-  user: engineerskillprofileuser
-  password: engineerskillprofileuserpassword
+  user: 
+  password: 
 
 
 amazon:
   region: us-east-2
   access:
-    key: AKIAY2YPA44KKPI5IA5Q 
-    secretkey: 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
+    key:  
+    secretkey: 
     
 aws:
-  accessKeyId: AKIAY2YPA44KKPI5IA5Q
-  secretKey: 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
+  accessKeyId: 
+  secretKey: 
 
